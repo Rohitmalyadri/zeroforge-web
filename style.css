@@ -361,14 +361,14 @@ footer {
 
     color: #666;
 
-    font-size: 13px;
+    font-size: 16px;
 }
 
 .footer-links {
 
     display: flex;
 
-    gap: 20px;
+    gap: 24px;
 
     margin-top: 30px;
 
