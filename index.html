@@ -150,7 +150,7 @@
 
             </div>
 
-            <div class="step-gallery" aria-label="ZeroForge ZIP usage steps">
+             <div class="step-gallery" aria-label="ZeroForge ZIP usage steps">
 
                 <figure class="step-card">
                     <img src="assets/Steps/step1.png" alt="Download the zeroForge zip file">
@@ -178,6 +178,80 @@
                 </figure>
 
             </div>
+
+            <div class="tutorial-section" aria-label="ZeroForge beginner tutorial">
+
+                <div class="section-label">
+                    FIRST 5 MINUTES
+                </div>
+
+                <h2>
+                    First 5 Minutes with ZeroForge
+                </h2>
+
+                <div class="tutorial-timeline">
+
+                    <article class="tutorial-step">
+                        <div class="step-index">1</div>
+                        <div class="step-content">
+                            <h3>Start ZeroForge</h3>
+                            <p>After extracting the ZIP, open the project folder in Command Prompt and run the launcher.</p>
+                            <pre><code>run.bat</code></pre>
+                            <p class="small-note">This is the quickest way to open the ZeroForge menu for the built-in interfaces.</p>
+                        </div>
+                    </article>
+
+                    <article class="tutorial-step">
+                        <div class="step-index">2</div>
+                        <div class="step-content">
+                            <h3>Choose an Interface</h3>
+                            <p>Pick the workflow that matches how you want to work.</p>
+                            <ul class="interface-list">
+                                <li><strong>CLI</strong> — best for quick commands and developer workflows.</li>
+                                <li><strong>REPL</strong> — best when you want to explore and test tasks interactively.</li>
+                                <li><strong>Wizard</strong> — best for guided setup and first-time use.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="tutorial-step">
+                        <div class="step-index">3</div>
+                        <div class="step-content">
+                            <h3>Create Your First Task</h3>
+                            <p>Once the interface is open, create a task you can actually work on.</p>
+                            <pre><code>task add "Ship landing page"</code></pre>
+                            <p class="small-note">This creates your first task and gives ZeroForge something to track.</p>
+                        </div>
+                    </article>
+
+                    <article class="tutorial-step">
+                        <div class="step-index">4</div>
+                        <div class="step-content">
+                            <h3>Add a Dependency</h3>
+                            <p>ZeroForge is built around task relationships. A task can depend on another task being finished first.</p>
+                            <pre><code>task add "Prepare assets"</code>
+<code>task add "Publish release" --depends-on "Prepare assets"</code></pre>
+                            <p class="small-note">Task B becomes dependent on Task A, so the tool can understand the correct order.</p>
+                        </div>
+                    </article>
+
+                    <article class="tutorial-step">
+                        <div class="step-index">5</div>
+                        <div class="step-content">
+                            <h3>View Your Plan / Tasks</h3>
+                            <p>Check what is queued, blocked, or ready next.</p>
+                            <pre><code>task list</code></pre>
+                            <div class="output-box">
+                                <span>Example</span>
+                                <code>1. Prepare assets<br>2. Publish release (blocked until Prepare assets is complete)</code>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+
 
         </section>
 
